@@ -4,18 +4,21 @@
         <script>
 
             alert("olá galera!")
-            function mudarFrase() {
+            function trocarTexto() {
                 var elemento = document.getElementById("frase")
-                elemento.innerHTML = "Qualquer frase"
-                elemento.style.color = "red";
-                elemento.style.fontSize = "25px";
-                elemento.style.backgroundColor = "yellow";
-                document.body.style.backgroundColor = "blue";
-                elemento.innerHTML = "<img src=\'img/a.jpeg\' />"
+                var elementoNovo = document.getElementById("novafrase").value
+              elemento.innerHTML = elementoNovo
             }
         </script>
+        <script src="js/myscript.js" type="text/Javascript"></script>
+        <link href="stylesheet" href="css/style.css">
     </head>
     <body>
         <h1 ondblclick="mudarFrase()" id="frase">Olá Mundo!</h1>
+        <input id="novaFrase" type="text"><br>
+        <input id="botao" type="button"
+        value="Trocar Frase"
+        onclick="trocarTexto();"><br>
+        <a href="calculadora.html">Calculadora</a>
     </body>
 </html>
